@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:id="@+id/cardview"
+    app:cardBackgroundColor="@color/black"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile1"
+            android:id="@+id/img1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+           android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/nametext"
+            android:text="username"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/img1"
+            android:fontFamily="@font/bangers"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/coursetext"
+            android:layout_below="@id/img1"
+            android:fontFamily="@font/antic"
+            android:text="user full name"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/ranking_rp_text"-->
+<!--            android:layout_below="@id/coursetext"-->
+<!--            android:fontFamily="@font/antic"-->
+<!--            android:text="RP: 0.0"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            />-->
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailtext"
+            android:gravity="center"
+            android:text="Rank:0"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bungee"
+            android:layout_below="@id/coursetext"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

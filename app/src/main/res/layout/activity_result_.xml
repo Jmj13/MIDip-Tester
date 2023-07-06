@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:id="@+id/result_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Result_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@color/colorPrimary"
+    android:id="@+id/result_user_detail_page"
+       android:padding="10dp">
+            <nl.dionsegijn.konfetti.KonfettiView
+                android:id="@+id/viewKonfetti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+      <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile1"
+            android:id="@+id/result_userprofile" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/result_userprofile"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="27sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/result_userfullname"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bungee"
+            android:text="UserName"/>
+
+      <TextView
+          android:id="@+id/result_subject_chapter"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginTop="25dp"
+          android:layout_marginBottom="-11dp"
+          android:fontFamily="@font/bangers"
+          android:gravity="center"
+          android:padding="5dp"
+          android:text="Subject-Chapter-TestLevel"
+          android:textColor="@color/white"
+          android:textSize="25sp" />
+  </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/result_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/failed"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/result_score" />
+
+
+        <TextView
+            android:id="@+id/result_lebel"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/bungee"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:text="RESULT"
+            android:gravity="center"
+            android:textSize="50dp"/>
+    <TextView
+        android:id="@+id/result_score"
+        android:gravity="center"
+        android:layout_below="@+id/result_lebel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:paddingLeft="30dp"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/black"
+        android:text="SCORE: 0"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/result_total_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/result_score"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/black"
+        android:text="TOTAL SCORE: 0"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/result_RP"
+android:layout_below="@+id/result_total_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:paddingLeft="30dp"
+        android:gravity="center"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/black"
+        android:text="RP: 0"
+        android:textStyle="bold"
+        />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

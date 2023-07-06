@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1018678391219",
+    "firebase_url": "https://databasedemo-97731.firebaseio.com",
+    "project_id": "databasedemo-97731",
+    "storage_bucket": "databasedemo-97731.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018678391219:android:f9ab06ebe28cc6c267dbc6",
+        "android_client_info": {
+          "package_name": "com.jagrutijadhav.ajp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018678391219-e33g6aoa4kaihdn6g0elmbnn9lrcvcgi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jagrutijadhav.ajp",
+            "certificate_hash": "6da10545a468bf67072b397f5f24538884376086"
+          }
+        },
+        {
+          "client_id": "1018678391219-b949ph8pqvhpmib6cs5a52ck6jg9apa4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jagrutijadhav.ajp",
+            "certificate_hash": "fe2b0ef73160e163b180aa50463db997198650f2"
+          }
+        },
+        {
+          "client_id": "1018678391219-srnb5bki0rk2dmsuvdooqn68qckkptde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFHKzWMDr9rFC5Prfy3DXw2P60FBSVy6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018678391219-srnb5bki0rk2dmsuvdooqn68qckkptde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

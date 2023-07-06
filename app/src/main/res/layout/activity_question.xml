@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/question_page_background1"
+    android:paddingRight="25dp"
+    android:paddingLeft="25dp"
+    android:id="@+id/question_page"
+    android:paddingBottom="50dp"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_volume_off_black_24dp"
+        android:id="@+id/volume"
+        android:onClick="voice"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_below="@+id/volume"
+        android:id="@+id/q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Question "
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_below="@+id/volume"
+        android:layout_toRightOf="@+id/q"
+        android:id="@+id/question_num"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="@font/bungee"
+        android:text="1" />
+    <TextView
+        android:layout_below="@+id/volume"
+        android:id="@+id/u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/question_num"
+        android:text=" of 30" />
+    <TextView
+        android:layout_below="@+id/volume"
+        android:id="@+id/time_lebel"
+        android:layout_toRightOf="@+id/u"
+        android:textSize="15dp"
+        android:fontFamily="@font/bungee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/minittime"
+        android:textColor="@color/black"
+        android:text="Time " />
+
+
+    <TextView
+        android:layout_below="@+id/volume"
+        android:layout_toLeftOf="@id/secondtime"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bungee"
+        android:id="@+id/minittime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="30: " />
+
+    <TextView
+        android:layout_below="@+id/volume"
+        android:id="@+id/secondtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/black"
+
+        android:textSize="15dp" />
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/secondtime"
+        android:layout_above="@+id/next_submit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Your Fev. Language"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <thereisnospon.codeview.CodeView
+                android:id="@+id/codeview"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content">
+            </thereisnospon.codeview.CodeView>
+
+
+
+            <RadioGroup
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup">
+
+                <RadioButton
+                    android:padding="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="@color/black"
+                    android:textColor="@color/white"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:padding="10dp"
+                    android:background="@color/black"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/option3"
+                    android:background="@color/black"
+android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="RadioButton" />
+
+                <RadioButton
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:background="@color/black"
+                    android:textColor="@color/white"
+                    android:text="RadioButton" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:onClick="previous"
+        android:gravity="center"
+        android:text="P"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:onClick="next_and_submit"
+        android:id="@+id/next_submit"
+        android:text="N"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="35sp"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="Q"
+        android:onClick="examexit"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="35sp"/>
+
+
+
+
+
+
+</RelativeLayout>

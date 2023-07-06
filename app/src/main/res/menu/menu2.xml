@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/about"
+        android:title="About us"
+        />
+
+    <item
+        android:id="@+id/menu_user_Profile"
+        android:title="User Profile"
+        />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:title="Log Out"
+            />
+
+    <item
+        android:id="@+id/menu_Ranking"
+        android:title="Ranking"
+        >
+
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/rankmenuajp"
+                    android:title="AJP"/>
+                <item
+                    android:id="@+id/rankmenuest"
+                    android:title="EST"/>
+                <item
+                    android:id="@+id/rankmenuman"
+                    android:title="MAN"/>
+
+
+            </group>
+        </menu>
+    </item>
+
+<!--        <item-->
+<!--            android:id="@+id/purchase"-->
+<!--            android:title="Purchase">-->
+<!--            <menu>-->
+<!--                <group-->
+<!--                    android:checkableBehavior="single">-->
+<!--                    <item-->
+<!--                        android:id="@+id/menuajp"-->
+<!--                        android:title="AJP"/>-->
+<!--                    <item-->
+<!--                        android:id="@+id/menuest"-->
+<!--                        android:title="EST"/>-->
+<!--                    <item-->
+<!--                        android:id="@+id/menuman"-->
+<!--                        android:title="MAN"/>-->
+
+
+<!--                </group>-->
+<!--            </menu>-->
+<!--        </item>-->
+
+
+
+
+    </group>
+</menu>

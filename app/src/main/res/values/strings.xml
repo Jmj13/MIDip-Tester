@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MIDip Tester</string>
+    <string name="test_level">TEST LEVELS</string>
+    <string name="subject">SUBJECTS</string>
+    <string name="ranking">RANKING</string>
+    <string name="chapter">CHAPTERS</string>
+    <string name="profile">PROFILE DETAIL</string>
+    <string name="result">RESULT</string>
+    <string name="Change_pass">CHANGE PASSWORD</string>
+    <string name="login">LOGIN PAGE</string>
+    <string name="open_Drawebal">OPEN DRWEBAL</string>
+    <string name="CLOSE_DRAWEBLE">CLOSE DRAWEBAL</string>
+    <string name="new_user">NEW USERS</string>
+</resources>

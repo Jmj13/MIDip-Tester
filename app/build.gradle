@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        //  multiDexEnabled true
+        applicationId "com.jagrutijadhav.ajp"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.jagrutijadhav.ajp'
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'com.google.android.material:material:1.0.0'
+  implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    // implementation 'com.google.firebase:firebase-config:20.0.2'
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.squareup.picasso:picasso:2.3.3'
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation 'thereisnospon.codeview:codeview:0.3.1'
+//  implementation 'androidx.recyclerview:recyclervire:1.1.0'
+// implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    //implementation 'com.firebaseui:firebase-ui-database:6.2.1'
+    implementation 'com.firebaseui:firebase-ui-database:7.1.1'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'nl.dionsegijn:konfetti:1.1.2'
+}
